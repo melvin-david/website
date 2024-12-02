@@ -71,11 +71,10 @@ nav li:first-child{
 
 .wrapper {
 	width: 100%;
-	height: auto;
 	display: flex;
 	animation: slide 16s infinite;
 }
-img{
+.wrapper img{
 	width: 100%;
 	height: auto;
 
@@ -132,6 +131,10 @@ img{
 	}
 	.wrapper{
 		width: 100%;
-		}	
+		}
+	.wrapper img{
+		width: 100%;
+		height: auto;
+	}	
 	}
 }
