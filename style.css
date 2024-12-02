@@ -73,7 +73,7 @@ nav li:first-child{
 	}
 }
 .container {
-	width: 105vmin;
+	width: 100vh;
 	height: 44%;
 	position: absolute;
 	transform: translate(-50%,-50%);
@@ -118,11 +118,10 @@ img{
 	}
 
 }
-@media(max-width: 600px){
+@media(max-width: 400px){
 	.container{
 		width: 100%;
 	}
 	.wrapper{
 		width: 100%;
-		display: inline-flex;
 	}
