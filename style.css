@@ -74,7 +74,7 @@ nav li:first-child{
 }
 .container {
 	width: 105vmin;
-	height: 43%;
+	height: 40%;
 	position: absolute;
 	transform: translate(-50%,-50%);
 	top: 29%;
