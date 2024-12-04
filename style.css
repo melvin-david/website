@@ -111,13 +111,6 @@ nav li:first-child{
     background-attachment: fixed;
     height: 90vh;
 }
-.bg {
-	width: 100%;
-	background-position: center;
-	background-size: cover;
-	
-	
-}
 .slide_con .slide_content
 {
     padding-top: 7%;
