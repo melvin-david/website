@@ -4,10 +4,6 @@
 }
 body{
 	min-height: 100vh;
-	background-image: url(images/back.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 	font-family: Segoe UI', Tahoma,  Geneva, Verdana, sans-serif ;
 }
 nav{
@@ -60,7 +56,7 @@ nav li:first-child{
 	display: none;
 }
 .container {
-	width: 213vh;
+	width: 210vh;
 	height: 44%;
 	position: absolute;
 	transform: translate(-50%,-50%);
@@ -106,6 +102,23 @@ nav li:first-child{
 	}
 
 }
+.slide_con
+{
+    background-image: url("images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+}
+.bg {
+	width: 100%;
+	height: 10px;
+	background-position: center;
+	background-size: cover;
+	background-image: url(images/back.jpg);
+	background-attachment: fixed;
+}
 .slide_con .slide_content
 {
     padding-top: 7%;
@@ -131,6 +144,34 @@ nav li:first-child{
 h2, span, a {
     text-decoration: none !important;
 }
+.side 
+{
+    margin-top:5%;
+    margin-bottom: 5%;
+    display: flex;
+    text-align: center;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+.side .left
+{
+    float: left;
+}
+.side .right
+{
+    float:right;
+    padding-left: 10%;
+}
+.side .right h2
+{
+    font-size: 250%;
+}
+.side .right p
+{
+    width: 50%;
+    font-size: 140%;
+    margin-left:25%;
+    margin-top: 8%;
+}
 
 @media (max-width:800px){
 	.hideOnMobile{
@@ -145,16 +186,50 @@ h2, span, a {
 	.wrapper{
 		width: 100%;
 	}
+	.slide_con{
+		height: 57vh;
+	}
 	.slide_con .slide_content{
 		padding-top: 25%;
     	margin-right: 0%;
 	}
 	.slide_con .slide_content h2{
 		font-size: 250%;
+		line-height: 30px;
 	}
 	.slide_con .slide_content h2 span{
 		font-size: 50%;
-	}	
+		line-height: 15px;
+	}
+/*----------------------------------------------------------------------------------------------------*/
+	.side img{
+		width: 70%;
+		height: auto;
+		display: block;
+	}
+	.side 
+{
+    width: 100%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    display: inline-block;
+    text-align: center;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+.side .right h2
+{
+    font-size: 250%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+.side .right p
+{
+    width: 70%;
+    font-size: 140%;
+    margin-left: 5%;
+    margin-top: 8%;
+    text-align: center;
+}	
 }
 @media(max-width: 400px){
 	.sidebar{
