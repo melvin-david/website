@@ -8,7 +8,7 @@ body{
 	
 }
 nav{
-	background-color: white;
+	background-color: #24262b;
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav ul{
@@ -37,7 +37,12 @@ nav li:first-child{
 	margin-right: auto;
 }
 a{
-	pointer-events: none;
+	pointer-events: auto;
+}
+.logo-container img{
+	display: block;
+    margin-left: 15px;
+    margin-right: 0px;
 }
 .sidebar{
 	position: fixed;
@@ -47,7 +52,7 @@ a{
 	width: 250px;
 	z-index: 999;
 	backdrop-filter: blur(10px);
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(100, 100, 100, 0.3);
 	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
 	display: none;
 	flex-direction: column;
@@ -60,6 +65,10 @@ a{
 .menu-button{
 	display: none;
 }
+li a svg {
+  fill: #FFFFFF;
+}
+
 .container {
 	width: 210vh;
 	height: 44%;
@@ -179,13 +188,18 @@ h2, span, a {
 .side .right h2, .side .right p {
     text-decoration: none;
     color: black;
-    pointer-events: none;
 }
 .title{
 	text-align: center;
 	font-size: 5vmin;
 	color: #12606e;
 }
+.title h1 {
+    display: inline-block;
+    border-bottom: 3px solid #ff8a00; /* Choose your preferred color */
+    padding-bottom: 1px; /* Add space between the text and the underline */
+}
+
 .card-container{
 	display: flex;
 	justify-content: center;
@@ -245,7 +259,7 @@ ul{
 }
 .footer{
 	background-color: #24262b;
-    padding: 70px 0;
+    padding: 10px 0;
 }
 .footer-col{
    width: 25%;
@@ -302,7 +316,26 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
+hr{
+	width: 90%;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	margin: 20px auto;
+}
+.logo-container {
+  text-align: center; /* Center the logo in the footer */
+  margin: 0; /* Add spacing around the logo */
+}
 
+.logo-container img {
+  max-width: 150px; /* Adjust the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 5px;
+}
+.copyright{
+	text-align: center;
+	color: #bbbbbb;
+}
 
 @media (max-width:800px){
 	.hideOnMobile{
