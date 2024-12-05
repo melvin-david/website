@@ -311,8 +311,14 @@ ul{
 	.menu-button{
 		display: block;
 	}
+	nav li{
+	height: 47px;
+}
+	ul img{
+		width: 50px;
+	}
 	.container{
-		width: 100%;
+		max-width: 100%;
 	}
 	.wrapper{
 		width: 100%;
@@ -336,7 +342,7 @@ ul{
 		margin-top: 40px;
 	}
 	.container{
-		top: 31.5%;
+		top: 27.1%;
 	}
 	.card-container{
 		margin-top: 25px;
@@ -389,6 +395,12 @@ ul{
 	.container{
 		width: 100%;
 	}
+	nav li{
+	height: 47px;
+}
+	ul img{
+		width: 50px;
+	}
 	.wrapper{
 		width: 100%;
 		}
@@ -397,7 +409,7 @@ ul{
 		height: auto;
 	}
 	.container{
-		top: 35%;
+		top: 29%;
 	}
 	.slide_con .slide_content{
 		padding-top: 25%;
