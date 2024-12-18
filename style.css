@@ -9,7 +9,11 @@ body{
 }
 nav{
 	background-color: #24262b;
-	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 nav ul{
 	width: 100%;
@@ -43,6 +47,7 @@ a{
 	display: block;
     margin-left: 15px;
     margin-right: 0px;
+    pointer-events: none;
 }
 .sidebar{
 	position: fixed;
@@ -134,8 +139,7 @@ li a svg {
 }
 .slide_con .slide_content
 {
-    padding-top: 7%;
-    margin-right: 10%;
+    padding-top: 15%;
 }
 .slide_con .slide_content h2
 {
@@ -156,6 +160,7 @@ li a svg {
 }
 h2, span, a {
     text-decoration: none !important;
+    pointer-events: none;
 }
 .side 
 {
@@ -247,23 +252,28 @@ h2, span, a {
 /*-----------------------------------footer---------------------------------------------------------*/
 
 .footer-container{
+	pointer-events: auto;
 	max-width: 1170px;
 	margin:auto;
 }
 .row{
 	display: flex;
 	flex-wrap: wrap;
+	pointer-events: auto;
 }
 ul{
 	list-style: none;
+	pointer-events: auto;
 }
 .footer{
 	background-color: #24262b;
     padding: 10px 0;
+    pointer-events: auto;
 }
 .footer-col{
    width: 25%;
    padding: 0 15px;
+   pointer-events: auto;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -272,6 +282,7 @@ ul{
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
+	pointer-events: auto;
 }
 .footer-col h4::before{
 	content: '';
@@ -282,9 +293,11 @@ ul{
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
+	pointer-events: auto;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
+	pointer-events: auto;
 }
 .footer-col ul li a{
 	font-size: 16px;
@@ -295,10 +308,12 @@ ul{
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
+	pointer-events: auto;
 }
 .footer-col ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
+	pointer-events: auto;
 }
 .footer-col .social-links a{
 	display: inline-block;
@@ -311,25 +326,27 @@ ul{
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
+	pointer-events: auto;
 }
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
+	pointer-events: auto;
 }
 hr{
 	width: 90%;
 	border: 0;
 	border-bottom: 1px solid #ccc;
 	margin: 20px auto;
+	pointer-events: auto;
 }
 .logo-container {
-  text-align: center; /* Center the logo in the footer */
-  margin: 0; /* Add spacing around the logo */
+  text-align: center; 
 }
 
 .logo-container img {
-  max-width: 150px; /* Adjust the width of the logo */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 150px; 
+  height: auto;
   margin-top: 5px;
 }
 .copyright{
